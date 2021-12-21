@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --white-bg-color: rgba(197, 197, 197, 0.123);
+  --white-font-color: white;
+  --opacity: 0.3;
+  --black-bg-color: rgba(0, 0, 0, 0.795);
+  --black-font-color: black;
+}
+
+body {
+  /* background-image: url("/images/ramadhan.jpg"); */
+  background-color: rgb(231, 216, 195);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+  color: white;
+  font-size: 4rem;
+  margin-top: 5rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  background-color: var(--black-bg-color);
+  border-radius: 20px;
+  box-shadow: 0.1rem 0.1rem 1rem var(--white-bg-color);
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
+  font-size: 1.3rem;
+}
+
+form {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--white-font-color);
+  background-color: var(--black-bg-color);
+  border-radius: 5px;
+  overflow: hidden;
+}

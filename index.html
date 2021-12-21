@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title">Hari</h1>
+
+    <div class="countdown-container">
+      <div class="countdown-el days-c">
+        <p class="big-text" id="days">0</p>
+        <span>hari</span>
+      </div>
+      <div class="countdown-el hours-c">
+        <p class="big-text" id="hours">0</p>
+        <span>jam</span>
+      </div>
+      <div class="countdown-el mins-c">
+        <p class="big-text" id="mins">0</p>
+        <span>menit</span>
+      </div>
+      <div class="countdown-el seconds-c">
+        <p class="big-text" id="seconds">0</p>
+        <span>detik</span>
+      </div>
+    </div>
+
+    <form class="selectDate" action="">
+      <label for="inputHari">Pilih Hari Libur Nasional</label>
+      <br />
+      <select id="inputHari" onchange="gantiTanggal()">
+        <option value="0">Pilih Hari</option>
+      </select>
+
+      <!-- <button class="submit" onclick="gantiTanggal()">Pilih</button> -->
+    </form>
+  </body>
+</html>
